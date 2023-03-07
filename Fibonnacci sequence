@@ -1,0 +1,15 @@
+//Kotlin code that prints the fibonnacci sequence up to a given number
+fun main() {
+    print("Enter a number: ")
+    val n = readLine()?.toInt() ?: return
+
+    var a = 0
+    var b = 1
+
+    while (a <= n) {
+        print("$a ")
+        val sum = a + b
+        a = b
+        b = sum
+    }
+}
